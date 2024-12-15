@@ -60,6 +60,15 @@ Run the below command to install the required dependencies
 Below is the working preview of the app in the emulator with all the implemented features mentioned above.
 Google drive link for working preview - https://drive.google.com/file/d/1gYjBrjw9obaEgEMdlaxK7PYRBupj2yTy/view?usp=sharing
 
+![image](https://github.com/user-attachments/assets/3608f66c-28e8-4a02-bbed-ae7ecb3212bc)
+
+![image](https://github.com/user-attachments/assets/149a3c56-d838-423e-bb3b-907e7c2e6eb1)
+
+![image](https://github.com/user-attachments/assets/4066a155-9e47-4897-9e5c-be3f5c89630d)
+
+
+
+
 
 
 
