@@ -1,16 +1,65 @@
 # fam
 
-A new Flutter project.
+## Overview
+This repository contains the Flutter assignment that implements the AAL3 flutter intern assignment. Follow the instructions below to clone, set up, and run the project.
+
+## Prerequisites
+1. Flutter SDK
+2. Android Studio or VS Code (with Flutter and Dart plugins)
+3. Git
+4. A physical/emulator device with Flutter-compatible configuration
 
 ## Getting Started
+1. Clone the repository
+   git clone https://github.com/your-username/your-repo-name.git
 
-This project is a starting point for a Flutter application.
+2. Navigate into the project directory:
+   cd your-repo-name
 
-A few resources to get you started if this is your first Flutter project:
+## Install dependencies
+Run the below command to install the required dependencies
+  flutter pub get
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Run the application
+1. Connect a physical device or a start an emulator
+2. Run the app with the below command
+   flutter run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Project structure
+1. lib folder contains all the code for the flutter app. Inside the lib folder
+     a. data:
+         1. Contains service class to interact with the db / api.
+         2. Contains repo class that abstracts functions from service class.
+
+     b. domain
+         1. Contains the card model, and different design card models such as HC9, HC3 etc, as given in the assignment.
+         2. Contains card bloc, that emits states according to the user events. Data is rendered on the screen from the api using this bloc.
+         3. Contains BigCardCubit, that manages state for the visibility of the Big Display Card (HC3). Also uses shared preferences to persist the managed state.
+
+     c. presentation
+         1. Contains reusable components for different design cards, such as Hc1Card, Hc3Card, etc as given in the assignment.
+         2. Contains contextual card, that acts as a stand alone container and renders different cards according to different designs, such as HC1, HC3 etc.
+         3. Contains card_view.dart that renders all the cards.
+         4. Contains utils that has utility functions, such as hexToColor, angleToRadian etc. Also contains asset paths
+
+     d. endpoints
+         1. Contains endpoints for api calls.
+         2. Only base url added for the given assignment.
+
+## Features Implemented
+  1. Animated card with action buttons.
+  2. Persistent state using shared_preferences.
+  3. Dynamic theming based on backend data.
+  4. Redirection to url links on tap.
+
+
+## Apk for android
+  Google drive link for apk - https://drive.google.com/file/d/1IVmEGmuY7vb6krO-hcWTAlfcst93hXNU/view?usp=sharing
+
+## Working preview
+Below is the working preview of the app in the emulator with all the implemented features mentioned above.
+Google drive link for working preview - https://drive.google.com/file/d/1gYjBrjw9obaEgEMdlaxK7PYRBupj2yTy/view?usp=sharing
+
+
+
+
