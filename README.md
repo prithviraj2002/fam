@@ -27,24 +27,23 @@ Run the below command to install the required dependencies
 
 ## Project structure
 1. lib folder contains all the code for the flutter app. Inside the lib folder
-     a. data:
-         1. Contains service class to interact with the db / api.
-         2. Contains repo class that abstracts functions from service class.
+     a. data: Contains service class to interact with the db / api.
+              Contains repo class that abstracts functions from service class.
 
      b. domain
-         1. Contains the card model, and different design card models such as HC9, HC3 etc, as given in the assignment.
-         2. Contains card bloc, that emits states according to the user events. Data is rendered on the screen from the api using this bloc.
-         3. Contains BigCardCubit, that manages state for the visibility of the Big Display Card (HC3). Also uses shared preferences to persist the managed state.
+         Contains the card model, and different design card models such as HC9, HC3 etc, as given in the assignment.
+         Contains card bloc, that emits states according to the user events. Data is rendered on the screen from the api using this bloc.
+         Contains BigCardCubit, that manages state for the visibility of the Big Display Card (HC3). Also uses shared preferences to persist the managed state.
 
      c. presentation
-         1. Contains reusable components for different design cards, such as Hc1Card, Hc3Card, etc as given in the assignment.
-         2. Contains contextual card, that acts as a stand alone container and renders different cards according to different designs, such as HC1, HC3 etc.
-         3. Contains card_view.dart that renders all the cards.
-         4. Contains utils that has utility functions, such as hexToColor, angleToRadian etc. Also contains asset paths
+         Contains reusable components for different design cards, such as Hc1Card, Hc3Card, etc as given in the assignment.
+         Contains contextual card, that acts as a stand alone container and renders different cards according to different designs, such as HC1, HC3 etc.
+         Contains card_view.dart that renders all the cards.
+         Contains utils that has utility functions, such as hexToColor, angleToRadian etc. Also contains asset paths
 
      d. endpoints
-         1. Contains endpoints for api calls.
-         2. Only base url added for the given assignment.
+         Contains endpoints for api calls.
+         Only base url added for the given assignment.
 
 ## Features Implemented
   1. Animated card with action buttons.
